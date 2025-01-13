@@ -1,0 +1,1242 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>okb</title>
+                <meta name="robots" content="noindex" />
+                
+
+        <!-- Custom HTML head -->
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+                <link rel="icon" href="favicon.svg">
+                        <link rel="shortcut icon" href="favicon.png">
+                <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+                <link rel="stylesheet" href="css/print.css" media="print">
+        
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+                <link rel="stylesheet" href="fonts/fonts.css">
+        
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+            </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> The OKB</a></li><li class="chapter-item expanded "><a href="the-talk/less-than-overly-complex-title-greater-than.html"><strong aria-hidden="true">2.</strong> &lt;overly complex title&gt;</a></li><li class="chapter-item expanded "><a href="the-talk/introduction.html"><strong aria-hidden="true">3.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="the-talk/the-idea.html"><strong aria-hidden="true">4.</strong> The Idea</a></li><li class="chapter-item expanded "><a href="the-talk/the-solution-hopefully.html"><strong aria-hidden="true">5.</strong> The Solution (hopefully)</a></li><li class="chapter-item expanded "><a href="the-talk/addressing-build-vs.-buy/index.html"><strong aria-hidden="true">6.</strong> Addressing Build vs. Buy</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="the-talk/addressing-build-vs.-buy/build-everything-usd1500-sandwich-in-6-months.html"><strong aria-hidden="true">6.1.</strong> Build Everything: $1500 Sandwich in 6 Months</a></li><li class="chapter-item expanded "><a href="the-talk/addressing-build-vs.-buy/buy-everything-budget-error-406-not-acceptable.html"><strong aria-hidden="true">6.2.</strong> Buy Everything: budget error 406 not acceptable</a></li><li class="chapter-item expanded "><a href="the-talk/addressing-build-vs.-buy/balanced-approach.html"><strong aria-hidden="true">6.3.</strong> Balanced Approach</a></li></ol></li><li class="chapter-item expanded "><a href="the-talk/site-walkthrough.html"><strong aria-hidden="true">7.</strong> Site Walkthrough</a></li><li class="chapter-item expanded "><a href="the-talk/contribute.html"><strong aria-hidden="true">8.</strong> Contribute!</a></li><li class="chapter-item expanded "><a href="the-talk/some-general-osint-thoughts.html"><strong aria-hidden="true">9.</strong> Some General OSINT Thoughts</a></li><li class="chapter-item expanded "><a href="the-talk/wrap-up-questions.html"><strong aria-hidden="true">10.</strong> Wrap-up / Questions</a></li><li class="chapter-item expanded "><a href="reviewed-content/workflows/index.html"><strong aria-hidden="true">11.</strong> Workflows</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="reviewed-content/workflows/profile-discovery-by-username.html"><strong aria-hidden="true">11.1.</strong> Profile Discovery by Username</a></li><li class="chapter-item expanded "><a href="reviewed-content/workflows/email-enumeration-by-domain.html"><strong aria-hidden="true">11.2.</strong> Email Enumeration by Domain</a></li></ol></li><li class="chapter-item expanded "><a href="reviewed-content/categories/index.html"><strong aria-hidden="true">12.</strong> Categories</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="reviewed-content/categories/public-breach-databases.html"><strong aria-hidden="true">12.1.</strong> Public Breach Databases</a></li><li class="chapter-item expanded "><a href="reviewed-content/categories/live-host-data.html"><strong aria-hidden="true">12.2.</strong> Live Host Data</a></li></ol></li><li class="chapter-item expanded "><a href="general-osint-info/multipurpose-reconnaissance-tools.html"><strong aria-hidden="true">13.</strong> Multipurpose Reconnaissance Tools</a></li><li class="chapter-item expanded "><a href="general-osint-info/identity-data.html"><strong aria-hidden="true">14.</strong> Identity Data</a></li><li class="chapter-item expanded "><a href="general-osint-info/documentation/index.html"><strong aria-hidden="true">15.</strong> Documentation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="general-osint-info/documentation/screen-capture.html"><strong aria-hidden="true">15.1.</strong> Screen Capture</a></li><li class="chapter-item expanded "><a href="general-osint-info/documentation/maps.html"><strong aria-hidden="true">15.2.</strong> Maps</a></li></ol></li><li class="chapter-item expanded "><a href="general-osint-info/threat-intelligence.html"><strong aria-hidden="true">16.</strong> Threat Intelligence</a></li><li class="chapter-item expanded "><a href="general-osint-info/code-repositories.html"><strong aria-hidden="true">17.</strong> Code Repositories</a></li><li class="chapter-item expanded "><a href="general-osint-info/malware-analysis/index.html"><strong aria-hidden="true">18.</strong> Malware Analysis</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="general-osint-info/malware-analysis/online-sandboxes.html"><strong aria-hidden="true">18.1.</strong> Online Sandboxes</a></li><li class="chapter-item expanded "><a href="general-osint-info/malware-analysis/android.html"><strong aria-hidden="true">18.2.</strong> Android</a></li></ol></li><li class="chapter-item expanded "><a href="general-osint-info/blockchain.html"><strong aria-hidden="true">19.</strong> Blockchain</a></li><li class="chapter-item expanded "><a href="general-osint-info/web-scraping/index.html"><strong aria-hidden="true">20.</strong> Web</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="general-osint-info/web-scraping/scraping/index.html"><strong aria-hidden="true">20.1.</strong> Scraping</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="general-osint-info/web-scraping/scraping/paste-sites.html"><strong aria-hidden="true">20.1.1.</strong> Paste Sites</a></li><li class="chapter-item expanded "><a href="general-osint-info/web-scraping/scraping/linkedin.html"><strong aria-hidden="true">20.1.2.</strong> LinkedIn</a></li></ol></li><li class="chapter-item expanded "><a href="general-osint-info/web-scraping/web-scanning-datasets.html"><strong aria-hidden="true">20.2.</strong> Web Scanning Datasets</a></li><li class="chapter-item expanded "><a href="general-osint-info/web-scraping/file-hosting-sites.html"><strong aria-hidden="true">20.3.</strong> File Hosting Sites</a></li></ol></li><li class="chapter-item expanded "><a href="general-osint-info/wifi.html"><strong aria-hidden="true">21.</strong> WiFi</a></li><li class="chapter-item expanded "><a href="general-osint-info/training/index.html"><strong aria-hidden="true">22.</strong> Training</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="general-osint-info/training/joe-gray-the-osintion.html"><strong aria-hidden="true">22.1.</strong> Joe Gray / The OSINTion</a></li></ol></li><li class="chapter-item expanded "><a href="about/how-to-contribute.html"><strong aria-hidden="true">23.</strong> How to Contribute</a></li><li class="chapter-item expanded "><a href="about/rules.html"><strong aria-hidden="true">24.</strong> Rules</a></li><li class="chapter-item expanded "><a href="about/contributors.html"><strong aria-hidden="true">25.</strong> Contributors</a></li></ol>            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                                                <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                                            </div>
+
+                    <h1 class="menu-title">okb</h1>
+
+                    <div class="right-buttons">
+                                                <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                                                                        
+                    </div>
+                </div>
+
+                                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <hr />
+<h2>description: &gt;-
+The OSINT Knowledge Base (OKB) is a collection of OSINT tools, products, and
+data sources. Its goal is to provide curated content to help people along
+their OSINT journeys.
+cover: https://w.wallhaven.cc/full/xl/wallhaven-xl1ydl.jpg
+coverY: 0</h2>
+<h1 id="the-okb"><a class="header" href="#the-okb">The OKB</a></h1>
+<h3 id="the-talk"><a class="header" href="#the-talk">The Talk</a></h3>
+<p>{% content-ref url=&quot;broken-reference&quot; %}
+<a href="broken-reference">Broken link</a>
+{% endcontent-ref %}</p>
+<h3 id="other-great-osint-resources"><a class="header" href="#other-great-osint-resources">Other Great OSINT Resources</a></h3>
+<p>{% embed url=&quot;https://metaosint.github.io/&quot; %}
+TONS of links. The interactive graph is cool.
+{% endembed %}</p>
+<p>{% embed url=&quot;https://inteltechniques.com/tools/index.html&quot; %}
+Michael Bazzell's IntelTechniques Site is Excellent
+{% endembed %}</p>
+<p>{% embed url=&quot;https://sector035.nl/links&quot; %}
+Links Broken Down By Category
+{% endembed %}</p>
+<p>{% embed url=&quot;https://osintframework.com&quot; %}
+A fun graphical tool with links for a bunch of categories
+{% endembed %}</p>
+<div style="break-before: page; page-break-before: always;"></div><hr />
+<h2>description: Evaluating OSINT Data sources and Tooling - Build vs Buy
+cover: &gt;-
+https://images.unsplash.com/photo-1565551223391-be988013ee6d?crop=entropy&amp;cs=tinysrgb&amp;fm=jpg&amp;ixid=MnwxOTcwMjR8MHwxfHNlYXJjaHwzfHxicm9rZW58ZW58MHx8fHwxNjY1NjM2Mzc5&amp;ixlib=rb-1.2.1&amp;q=80
+coverY: 0</h2>
+<h1 id="overly-complex-title"><a class="header" href="#overly-complex-title">&lt;overly complex title&gt;</a></h1>
+<h2 id="an-osint-talk"><a class="header" href="#an-osint-talk">&quot;An OSINT Talk&quot;</a></h2>
+<p>by: Corey Ham</p>
+<div style="break-before: page; page-break-before: always;"></div><hr />
+<h2 id="description-welcome"><a class="header" href="#description-welcome">description: Welcome!</a></h2>
+<h1 id="introduction"><a class="header" href="#introduction">Introduction</a></h1>
+<h2 id="what-is-this-talk"><a class="header" href="#what-is-this-talk">What is this talk?</a></h2>
+<p>This is a talk where I introduce a resource to help you make decisions about what tools, sites, or techniques to use next time you use OSINT.</p>
+<p>I'll also talk about my approach to OSINT, and provide some generalized recommendations based on my experience.</p>
+<h2 id="who-am-i"><a class="header" href="#who-am-i">Who am I?</a></h2>
+<ul>
+<li>Corey Ham | cham423
+<ul>
+<li>keybase <a href="https://keybase.io/cham423"><code>cham423</code></a>, discord <code>cham423#2790</code>, github <a href="https://github.com/cham423"><code>cham423</code></a>``</li>
+</ul>
+</li>
+<li>A tester at BHIS
+<ul>
+<li>mostly red team and adversary sim experience</li>
+<li>client-facing tester since 2013</li>
+<li>previously Optiv, Hurricane Labs</li>
+</ul>
+</li>
+<li>OSINT Enjoyer
+<ul>
+<li>Have used OSINT during offensive engagements over the years out of necessity</li>
+<li>Also do OSINT for &quot;fun&quot; (data hoarding)</li>
+</ul>
+</li>
+</ul>
+<h2 id="disclaimers"><a class="header" href="#disclaimers">Disclaimers</a></h2>
+<ul>
+<li>this talk contains opinions, biases, assumptions, and YMMV</li>
+<li>there are infinite OSINT use cases, and I can't cover them all</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="the-idea"><a class="header" href="#the-idea">The Idea</a></h1>
+<h3 id="osint-is-easy-but-theres-so-much-out-there"><a class="header" href="#osint-is-easy-but-theres-so-much-out-there">OSINT is easy! But there's so much out there...</a></h3>
+<ul>
+<li>nearly infinite amount of data available</li>
+<li>difficult to judge quality of data</li>
+<li>lots of tasks require human brains, manual effort</li>
+</ul>
+<h3 id="existing-osint-resources-lack-curation"><a class="header" href="#existing-osint-resources-lack-curation">Existing OSINT resources lack curation</a></h3>
+<ul>
+<li>huge lists of links (guilty)</li>
+<li>difficult to see return data types/capabilities ahead of time</li>
+<li>for beginners, difficult to map tools to specific workflows
+<ul>
+<li><em>example: business email enumeration</em></li>
+</ul>
+</li>
+</ul>
+<p>Time wasters:</p>
+<ul>
+<li>For free products, getting tools running can take time
+<ul>
+<li>keys, deployment, proxying, etc</li>
+</ul>
+</li>
+<li>Hosted tools often have limitations</li>
+<li>For paid products, cost/benefit</li>
+</ul>
+<p>We also have to decide between building it ourselves, using existing tools, or just paying for a commercial product.</p>
+<h3 id=""><a class="header" href="#"></a></h3>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="the-solution-hopefully"><a class="header" href="#the-solution-hopefully">The Solution (hopefully)</a></h1>
+<ul>
+<li>operators build their list of &quot;go-to&quot; tools over time based on experience</li>
+<li>why not share this experience? </li>
+</ul>
+<p><strong>This site!! have you noticed my slides are on gitbook? it's public.</strong></p>
+<p><a href="https://okb.goldmine.sh">https://okb.goldmine.sh</a></p>
+<ul>
+<li>Please contribute (more info on that later)</li>
+</ul>
+<p>Focus on metrics, fallback to opinions where metrics don't make sense</p>
+<ul>
+<li>for example, can compare certain tools by number of results and accuracy of results</li>
+<li>cannot review training this way</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="addressing-build-vs-buy"><a class="header" href="#addressing-build-vs-buy">Addressing Build vs. Buy</a></h1>
+<p>It was in the title of the talk...</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="build-everything-1500-sandwich-in-6-months"><a class="header" href="#build-everything-1500-sandwich-in-6-months">Build Everything: $1500 Sandwich in 6 Months</a></h1>
+<p>youtube channel “How to Make Everything” demonstrated how taking the “build” mentality to the absolute extreme can lead to ridiculous outcomes. His process involved harvesting and milling his own wheat to make the bread, killing his own chicken, and planting a garden to grow ingredients. in the end, the sandwich was “not bad” and consumed 6 months of his life.</p>
+<figure><img src="the-talk/addressing-build-vs.-buy/../../.gitbook/assets/Untitled.png" alt=""><figcaption></figcaption></figure>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="buy-everything-budget-error-406-not-acceptable"><a class="header" href="#buy-everything-budget-error-406-not-acceptable">Buy Everything: budget error 406 not acceptable</a></h1>
+<ul>
+<li>lots of overlapping data</li>
+<li>data you have no use for</li>
+<li>you might get fired</li>
+<li>purchased tools still need to be integrated</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="balanced-approach"><a class="header" href="#balanced-approach">Balanced Approach</a></h1>
+<ul>
+<li>some &quot;assembly&quot; is always required
+<ul>
+<li>integrating paid tools</li>
+<li>deploying free tools</li>
+<li>automation component</li>
+</ul>
+</li>
+<li>Mix build and buy to meet your OSINT goals</li>
+</ul>
+<p>Easy Examples:</p>
+<ul>
+<li>Buy
+<ul>
+<li> <strong>internet-sized attack surface data</strong> -- <em>building this would involve scanning billions of hosts, cost lots in hosting, and require lots of development to enrich the data to make it usable. and Shodan is quite affordable</em></li>
+</ul>
+</li>
+<li>Build
+<ul>
+<li><strong>profile enumeration by username (demo)</strong> -- there are tons of ways to do this, and it's relatively straightforward</li>
+<li><strong>anything that doesn't exist already</strong> -- <em>you have no other options...</em></li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="site-walkthrough"><a class="header" href="#site-walkthrough">Site Walkthrough</a></h1>
+<h2 id="reviewed-content"><a class="header" href="#reviewed-content">Reviewed Content</a></h2>
+<h3 id="workflows"><a class="header" href="#workflows">Workflows</a></h3>
+<ul>
+<li>a specific task, along with inputs and outputs</li>
+</ul>
+<h4 id="workflow-example"><a class="header" href="#workflow-example">Workflow Example</a></h4>
+<p>{% content-ref url=&quot;../reviewed-content/workflows/profile-discovery-by-username.md&quot; %}
+<a href="the-talk/../reviewed-content/workflows/profile-discovery-by-username.html">profile-discovery-by-username.md</a>
+{% endcontent-ref %}</p>
+<h3 id="categories"><a class="header" href="#categories">Categories</a></h3>
+<ul>
+<li>generic OSINT sources/tasks that do not have specific inputs and outputs</li>
+</ul>
+<h4 id="example"><a class="header" href="#example">Example</a></h4>
+<p>{% content-ref url=&quot;../reviewed-content/categories/public-breach-databases.md&quot; %}
+<a href="the-talk/../reviewed-content/categories/public-breach-databases.html">public-breach-databases.md</a>
+{% endcontent-ref %}</p>
+<h2 id="general-knowledge"><a class="header" href="#general-knowledge">General Knowledge</a></h2>
+<ul>
+<li>basically just huge lists of links (like I complained about in the start of the talk)</li>
+</ul>
+<h3 id="-1"><a class="header" href="#-1"></a></h3>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="contribute"><a class="header" href="#contribute">Contribute!</a></h1>
+<h3 id="new-workflow"><a class="header" href="#new-workflow">New Workflow?</a></h3>
+<ul>
+<li>consider your testing procedure, make sure it is repeatable</li>
+</ul>
+<h3 id="have-you-used-any-of-this-before"><a class="header" href="#have-you-used-any-of-this-before">Have you used any of this before?</a></h3>
+<ul>
+<li>add your experience/opinion to their descriptions</li>
+</ul>
+<h3 id="have-something-new"><a class="header" href="#have-something-new">Have something new?</a></h3>
+<ul>
+<li>add it, along with any supporting information you have</li>
+</ul>
+<p>{% content-ref url=&quot;../about/how-to-contribute.md&quot; %}
+<a href="the-talk/../about/how-to-contribute.html">how-to-contribute.md</a>
+{% endcontent-ref %}</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="some-general-osint-thoughts"><a class="header" href="#some-general-osint-thoughts">Some General OSINT Thoughts</a></h1>
+<h3 id="consider-opsec-before-you-start"><a class="header" href="#consider-opsec-before-you-start">Consider OPSEC before you start</a></h3>
+<ul>
+<li>your intelligence gathering is part of someone else's intelligence</li>
+<li>use a clean image if creating admissable evidence
+<ul>
+<li>Michael Bazzell has an excellent guide for this in his OSINT Techniques book</li>
+</ul>
+</li>
+</ul>
+<h3 id="automate-anything-you-can"><a class="header" href="#automate-anything-you-can">Automate anything you can </a></h3>
+<ul>
+<li>build a simple API wrapper script</li>
+<li>consider storing it in jupyter</li>
+<li>at the very least, build a checklist/standard procedure to follow</li>
+</ul>
+<h3 id="always-keep-your-output"><a class="header" href="#always-keep-your-output">Always keep your output</a></h3>
+<ul>
+<li>I prefer JSON/structured output formats, but you can parse it later</li>
+<li>Consider storing everything in elastic/ELK
+<ul>
+<li>Newer versions of ES are really good at auto-mapping</li>
+<li><code>curl -XPOST http://elk:9200/osint_dump_2022-09-15/_doc -H &quot;Content-Type: application/json&quot; -d @amass_out.json</code></li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="wrap-up--questions"><a class="header" href="#wrap-up--questions">Wrap-up / Questions</a></h1>
+<ul>
+<li>i really hope people use it :)</li>
+<li>more content is coming!</li>
+<li>any questions?</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="workflows-1"><a class="header" href="#workflows-1">Workflows</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><hr />
+<h2 id="description-inputs-username--outputs-list-of-profiles-associated-with-that-username"><a class="header" href="#description-inputs-username--outputs-list-of-profiles-associated-with-that-username">description: 'inputs: username | outputs: list of profiles associated with that username'</a></h2>
+<h1 id="profile-discovery-by-username"><a class="header" href="#profile-discovery-by-username">Profile Discovery by Username</a></h1>
+<h2 id="testing-methodology"><a class="header" href="#testing-methodology">Testing Methodology</a></h2>
+<ol>
+<li>check the same username (i.e. cham423) using each tool
+<ul>
+<li>count the number of profiles discovered</li>
+<li>count number of false positives (nonexistent profiles, not mismatches)</li>
+</ul>
+</li>
+<li>rate difficulty of deployment</li>
+<li>rate quality of output</li>
+<li>rate development health</li>
+<li>rate automation potential</li>
+</ol>
+<p>{% hint style=&quot;info&quot; %}
+see the template at the bottom of the page if you are adding a new tool.
+{% endhint %}</p>
+<h2 id="build-pick"><a class="header" href="#build-pick">Build Pick</a></h2>
+<h3 id="sherlock"><a class="header" href="#sherlock">Sherlock</a></h3>
+<p>{% embed url=&quot;https://github.com/sherlock-project/sherlock&quot; %}</p>
+<h4 id="example-results"><a class="header" href="#example-results">Example Results</a></h4>
+<pre><code class="language-shell">python3 sherlock.py cham423 -o cham423.out
+</code></pre>
+<figure><img src="reviewed-content/workflows/../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<ul>
+<li>38 total results</li>
+<li>0 false positives!</li>
+<li>7 results were not the target, but were valid accounts</li>
+</ul>
+<h4 id="deployment"><a class="header" href="#deployment">Deployment</a></h4>
+<ul>
+<li>python (medium difficulty)</li>
+<li>has a docker container as a fallback</li>
+</ul>
+<h4 id="output"><a class="header" href="#output">Output</a></h4>
+<ul>
+<li>basically stdout, no JSON output option -- a list of discovered profile urls</li>
+</ul>
+<h4 id="development-health"><a class="header" href="#development-health">Development Health</a></h4>
+<ul>
+<li>very healthy, recent commits, large number of contributors, long history</li>
+</ul>
+<h4 id="automation-potential"><a class="header" href="#automation-potential">Automation Potential</a></h4>
+<ul>
+<li>very high, command line tool that supports input lists</li>
+<li>&lt;todo&gt; not tested at scale. from a single host, would likely encounter rate limiting when enumerating large numbers of profiles</li>
+</ul>
+<h2 id="other-tools"><a class="header" href="#other-tools">Other Tools</a></h2>
+<h3 id="whatsmyname"><a class="header" href="#whatsmyname">WhatsMyName</a></h3>
+<p>{% embed url=&quot;https://github.com/WebBreacher/WhatsMyName&quot; %}</p>
+<h4 id="example-results-1"><a class="header" href="#example-results-1">Example Results</a></h4>
+<pre><code class="language-shell"> python3 whats_my_name.py -u cham423 -o cham423.out
+</code></pre>
+<figure><img src="reviewed-content/workflows/../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<ul>
+<li>114 total results</li>
+<li>75 false positives! (65% false positive rate)</li>
+</ul>
+<h4 id="deployment-1"><a class="header" href="#deployment-1">Deployment</a></h4>
+<ul>
+<li>python (medium difficulty)</li>
+</ul>
+<h4 id="output-1"><a class="header" href="#output-1">Output</a></h4>
+<ul>
+<li>file output was broken at time of testing (2022-09-18)</li>
+<li>stdout is printed in table form with lots of extra spaces/characters, and some profile links are cut off</li>
+</ul>
+<h4 id="development-health-1"><a class="header" href="#development-health-1">Development Health</a></h4>
+<ul>
+<li>OK, some recent contributions</li>
+</ul>
+<h4 id="automation-potential-1"><a class="header" href="#automation-potential-1">Automation Potential</a></h4>
+<ul>
+<li>medium -- this project is used by many projects for its JSON list of profile urls, which can be imported to check usernames automatically. the false positive rate is alarming</li>
+</ul>
+<h3 id="namechk-web"><a class="header" href="#namechk-web">Namechk (web)</a></h3>
+<p>{% embed url=&quot;https://namechk.com&quot; %}</p>
+<h4 id="example-results-2"><a class="header" href="#example-results-2">Example Results</a></h4>
+<figure><img src="reviewed-content/workflows/../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<ul>
+<li>25 total results</li>
+<li>1 false positive</li>
+</ul>
+<h4 id="deployment-2"><a class="header" href="#deployment-2">Deployment</a></h4>
+<ul>
+<li>web hosted (easy difficulty)</li>
+<li>1-5 clicks to full results</li>
+</ul>
+<h4 id="output-2"><a class="header" href="#output-2">Output</a></h4>
+<ul>
+<li>No file output</li>
+<li>Profile links to signup/about pages, not valid profiles</li>
+</ul>
+<h4 id="development-health-2"><a class="header" href="#development-health-2">Development Health</a></h4>
+<ul>
+<li>unknown (third party)</li>
+</ul>
+<h4 id="automation-potential-2"><a class="header" href="#automation-potential-2">Automation Potential</a></h4>
+<ul>
+<li>very limited: captcha + cloudflare would prevent easy scraping</li>
+</ul>
+<h3 id="namecheckr"><a class="header" href="#namecheckr">namecheckr</a></h3>
+<p>{% embed url=&quot;https://www.namecheckr.com/&quot; %}</p>
+<h4 id="example-results-3"><a class="header" href="#example-results-3">Example Results</a></h4>
+<figure><img src="reviewed-content/workflows/../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<ul>
+<li>12 total results</li>
+<li>1 false positives</li>
+</ul>
+<h4 id="output-a-hrefreviewed-contentworkflowsprofile-discovery-by-usernamehtmloutput-idoutputa"><a class="header" href="#output-a-hrefreviewed-contentworkflowsprofile-discovery-by-usernamehtmloutput-idoutputa">Output <a href="reviewed-content/workflows/profile-discovery-by-username.html#output" id="output"></a></a></h4>
+<ul>
+<li>no file output</li>
+<li>site links point to root page, not profile link</li>
+</ul>
+<h4 id="development-health-a-hrefreviewed-contentworkflowsprofile-discovery-by-usernamehtmldevelopment-health-iddevelopment-healtha"><a class="header" href="#development-health-a-hrefreviewed-contentworkflowsprofile-discovery-by-usernamehtmldevelopment-health-iddevelopment-healtha">Development Health <a href="reviewed-content/workflows/profile-discovery-by-username.html#development-health" id="development-health"></a></a></h4>
+<ul>
+<li>unknown (third party)</li>
+</ul>
+<h4 id="automation-potential-a-hrefreviewed-contentworkflowsprofile-discovery-by-usernamehtmlautomation-potential-idautomation-potentiala"><a class="header" href="#automation-potential-a-hrefreviewed-contentworkflowsprofile-discovery-by-usernamehtmlautomation-potential-idautomation-potentiala">Automation Potential <a href="reviewed-content/workflows/profile-discovery-by-username.html#automation-potential" id="automation-potential"></a></a></h4>
+<ul>
+<li>no CAPTCHA, so could be scraped</li>
+</ul>
+<h3 id="usersearchorg"><a class="header" href="#usersearchorg">UserSearch.org</a></h3>
+<p>{% embed url=&quot;https://usersearch.org/&quot; %}</p>
+<h4 id="example-results-4"><a class="header" href="#example-results-4">Example Results</a></h4>
+<figure><img src="reviewed-content/workflows/../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<ul>
+<li>15 total results</li>
+<li>1 false positive</li>
+</ul>
+<h4 id="deployment-3"><a class="header" href="#deployment-3">Deployment</a></h4>
+<ul>
+<li>web hosted (easy difficulty)</li>
+<li>requires 10+ clicks to see all sites, no single page with all results</li>
+</ul>
+<h4 id="output-a-hrefreviewed-contentworkflowsprofile-discovery-by-usernamehtmloutput-idoutputa-1"><a class="header" href="#output-a-hrefreviewed-contentworkflowsprofile-discovery-by-usernamehtmloutput-idoutputa-1">Output <a href="reviewed-content/workflows/profile-discovery-by-username.html#output" id="output"></a></a></h4>
+<ul>
+<li>no file output</li>
+<li>profile links available in search results, but not on single page</li>
+</ul>
+<h4 id="development-health-a-hrefreviewed-contentworkflowsprofile-discovery-by-usernamehtmldevelopment-health-iddevelopment-healtha-1"><a class="header" href="#development-health-a-hrefreviewed-contentworkflowsprofile-discovery-by-usernamehtmldevelopment-health-iddevelopment-healtha-1">Development Health <a href="reviewed-content/workflows/profile-discovery-by-username.html#development-health" id="development-health"></a></a></h4>
+<ul>
+<li>unknown (third party)</li>
+</ul>
+<h4 id="automation-potential-a-hrefreviewed-contentworkflowsprofile-discovery-by-usernamehtmlautomation-potential-idautomation-potentiala-1"><a class="header" href="#automation-potential-a-hrefreviewed-contentworkflowsprofile-discovery-by-usernamehtmlautomation-potential-idautomation-potentiala-1">Automation Potential <a href="reviewed-content/workflows/profile-discovery-by-username.html#automation-potential" id="automation-potential"></a></a></h4>
+<ul>
+<li>no CAPTCHA, could potentially be scraped</li>
+</ul>
+<h3 id="namecheckup"><a class="header" href="#namecheckup">NameCheckup</a></h3>
+<p>{% embed url=&quot;https://namecheckup.com/&quot; %}</p>
+<h4 id="example-results-5"><a class="header" href="#example-results-5">Example Results</a></h4>
+<figure><img src="reviewed-content/workflows/../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<ul>
+<li>14 total results</li>
+<li>1 false positive</li>
+</ul>
+<h4 id="deployment-4"><a class="header" href="#deployment-4">Deployment</a></h4>
+<ul>
+<li>web hosted (easy difficulty)</li>
+<li>1-5 clicks to results</li>
+</ul>
+<h4 id="output-a-hrefreviewed-contentworkflowsprofile-discovery-by-usernamehtmloutput-idoutputa-2"><a class="header" href="#output-a-hrefreviewed-contentworkflowsprofile-discovery-by-usernamehtmloutput-idoutputa-2">Output <a href="reviewed-content/workflows/profile-discovery-by-username.html#output" id="output"></a></a></h4>
+<ul>
+<li>no file output</li>
+<li>results link to specific profiles</li>
+</ul>
+<h4 id="development-health-a-hrefreviewed-contentworkflowsprofile-discovery-by-usernamehtmldevelopment-health-iddevelopment-healtha-2"><a class="header" href="#development-health-a-hrefreviewed-contentworkflowsprofile-discovery-by-usernamehtmldevelopment-health-iddevelopment-healtha-2">Development Health <a href="reviewed-content/workflows/profile-discovery-by-username.html#development-health" id="development-health"></a></a></h4>
+<ul>
+<li>unknown (third party)</li>
+</ul>
+<h4 id="automation-potential-a-hrefreviewed-contentworkflowsprofile-discovery-by-usernamehtmlautomation-potential-idautomation-potentiala-2"><a class="header" href="#automation-potential-a-hrefreviewed-contentworkflowsprofile-discovery-by-usernamehtmlautomation-potential-idautomation-potentiala-2">Automation Potential <a href="reviewed-content/workflows/profile-discovery-by-username.html#automation-potential" id="automation-potential"></a></a></h4>
+<ul>
+<li>no CAPTCHA, could potentially be scraped</li>
+</ul>
+<h3 id="checkusernames"><a class="header" href="#checkusernames">CheckUsernames</a></h3>
+<p>{% embed url=&quot;https://checkusernames.com/&quot; %}</p>
+<h4 id="example-results-6"><a class="header" href="#example-results-6">Example Results</a></h4>
+<figure><img src="reviewed-content/workflows/../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<ul>
+<li>42 total results</li>
+<li>27 false positives</li>
+<li>79 errors checking target site</li>
+</ul>
+<h4 id="deployment-5"><a class="header" href="#deployment-5">Deployment</a></h4>
+<ul>
+<li>web hosted (easy difficulty)</li>
+<li>1-5 clicks to results</li>
+</ul>
+<h4 id="output-a-hrefreviewed-contentworkflowsprofile-discovery-by-usernamehtmloutput-idoutputa-3"><a class="header" href="#output-a-hrefreviewed-contentworkflowsprofile-discovery-by-usernamehtmloutput-idoutputa-3">Output <a href="reviewed-content/workflows/profile-discovery-by-username.html#output" id="output"></a></a></h4>
+<ul>
+<li>no file output</li>
+<li>profile links are to individual profile, not to root page which is nice</li>
+</ul>
+<h4 id="development-health-a-hrefreviewed-contentworkflowsprofile-discovery-by-usernamehtmldevelopment-health-iddevelopment-healtha-3"><a class="header" href="#development-health-a-hrefreviewed-contentworkflowsprofile-discovery-by-usernamehtmldevelopment-health-iddevelopment-healtha-3">Development Health <a href="reviewed-content/workflows/profile-discovery-by-username.html#development-health" id="development-health"></a></a></h4>
+<ul>
+<li>unknown (third party)</li>
+</ul>
+<h4 id="automation-potential-a-hrefreviewed-contentworkflowsprofile-discovery-by-usernamehtmlautomation-potential-idautomation-potentiala-3"><a class="header" href="#automation-potential-a-hrefreviewed-contentworkflowsprofile-discovery-by-usernamehtmlautomation-potential-idautomation-potentiala-3">Automation Potential <a href="reviewed-content/workflows/profile-discovery-by-username.html#automation-potential" id="automation-potential"></a></a></h4>
+<ul>
+<li>no CAPTCHA, could potentially be scraped</li>
+</ul>
+<h3 id="namechk-script"><a class="header" href="#namechk-script">Namechk (script)</a></h3>
+<p>{% hint style=&quot;danger&quot; %}
+This tool is not currently functional as of 2022-09-18, and returns all false positives due to Cloudflare bot protection
+{% endhint %}</p>
+<p>{% embed url=&quot;https://github.com/GONZOsint/Namechk&quot; %}</p>
+<h4 id="example-output"><a class="header" href="#example-output">Example Output</a></h4>
+<figure><img src="reviewed-content/workflows/../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<h3 id="todo"><a class="header" href="#todo">Todo</a></h3>
+<ul>
+<li><a href="https://knowem.com/">https://knowem.com/</a></li>
+<li><a href="https://instantusername.com/#/">https://instantusername.com/#/</a></li>
+<li>namevine</li>
+<li>socialsearcher</li>
+</ul>
+<h3 id="template"><a class="header" href="#template">Template</a></h3>
+<p>&lt;link to tool&gt;</p>
+<h4 id="example-results-7"><a class="header" href="#example-results-7">Example Results</a></h4>
+<ul>
+<li>n total results</li>
+<li>n false positives</li>
+</ul>
+<h4 id="deployment-6"><a class="header" href="#deployment-6">Deployment</a></h4>
+<h4 id="output-a-hrefreviewed-contentworkflowsprofile-discovery-by-usernamehtmloutput-idoutputa-4"><a class="header" href="#output-a-hrefreviewed-contentworkflowsprofile-discovery-by-usernamehtmloutput-idoutputa-4">Output <a href="reviewed-content/workflows/profile-discovery-by-username.html#output" id="output"></a></a></h4>
+<ul>
+<li>&lt;describe output options&gt;</li>
+</ul>
+<h4 id="development-health-a-hrefreviewed-contentworkflowsprofile-discovery-by-usernamehtmldevelopment-health-iddevelopment-healtha-4"><a class="header" href="#development-health-a-hrefreviewed-contentworkflowsprofile-discovery-by-usernamehtmldevelopment-health-iddevelopment-healtha-4">Development Health <a href="reviewed-content/workflows/profile-discovery-by-username.html#development-health" id="development-health"></a></a></h4>
+<ul>
+<li>&lt;describe project health&gt;</li>
+</ul>
+<h4 id="automation-potential-a-hrefreviewed-contentworkflowsprofile-discovery-by-usernamehtmlautomation-potential-idautomation-potentiala-4"><a class="header" href="#automation-potential-a-hrefreviewed-contentworkflowsprofile-discovery-by-usernamehtmlautomation-potential-idautomation-potentiala-4">Automation Potential <a href="reviewed-content/workflows/profile-discovery-by-username.html#automation-potential" id="automation-potential"></a></a></h4>
+<ul>
+<li>&lt;describe automation potential&gt;</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><hr />
+<h2 id="description-input-domains--output-list-of-emails-for-input-domains"><a class="header" href="#description-input-domains--output-list-of-emails-for-input-domains">description: 'input: domains | output: list of emails for input domains'</a></h2>
+<h1 id="email-enumeration-by-domain"><a class="header" href="#email-enumeration-by-domain">Email Enumeration by Domain</a></h1>
+<h2 id="testing-methodology-1"><a class="header" href="#testing-methodology-1">Testing Methodology</a></h2>
+<ol>
+<li>check the same domain (i.e. microsoft.com) using each tool
+<ul>
+<li>count the number of results</li>
+</ul>
+</li>
+<li>rate difficulty of deployment</li>
+<li>rate quality of output</li>
+<li>rate development health</li>
+<li>rate automation potential</li>
+</ol>
+<h3 id="phonebookcz"><a class="header" href="#phonebookcz">Phonebook.cz</a></h3>
+<p><a href="https://phonebook.cz/">https://phonebook.cz/</a></p>
+<ul>
+<li>requires IntelX account to use (free signup)</li>
+<li>39,601 results for <code>microsoft.com</code></li>
+</ul>
+<h3 id="hunter"><a class="header" href="#hunter">Hunter </a></h3>
+<p>{% embed url=&quot;https://hunter.io/search&quot; %}</p>
+<h4 id="example-results-8"><a class="header" href="#example-results-8">Example Results</a></h4>
+<figure><img src="reviewed-content/workflows/../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<ul>
+<li>35,830 results</li>
+<li>also shows email format (i.e. {f}.{last}@domain.com</li>
+</ul>
+<h4 id="deployment-difficulty"><a class="header" href="#deployment-difficulty">Deployment Difficulty</a></h4>
+<ul>
+<li>web hosted (easy difficulty)</li>
+<li>has API</li>
+</ul>
+<h4 id="output-3"><a class="header" href="#output-3">Output</a></h4>
+<ul>
+<li>can export subset of records from web interface</li>
+<li>can export full records using API (if credits available in account)</li>
+</ul>
+<h4 id="pricing"><a class="header" href="#pricing">Pricing</a></h4>
+<ul>
+<li>$50-400/month depending on plan</li>
+<li>free plan available, limited quota per month</li>
+</ul>
+<h3 id="infoga"><a class="header" href="#infoga">Infoga</a></h3>
+<p>&lt;todo&gt;</p>
+<p>{% embed url=&quot;https://github.com/m4ll0k/infoga&quot; %}</p>
+<ul>
+<li>&quot;Infoga is a tool gathering email accounts informations (ip,hostname,country,...) from different public source (search engines, pgp key servers and shodan) and check if emails was leaked using haveibeenpwned.com API&quot;</li>
+<li>Language: python</li>
+</ul>
+<h3 id="skymeminfo"><a class="header" href="#skymeminfo">skymem.info</a></h3>
+<p>{% hint style=&quot;danger&quot; %}
+<strong>Note: i have not confirmed this is a legitimate site</strong>
+{% endhint %}</p>
+<p>{% embed url=&quot;http://www.skymem.info/&quot; %}</p>
+<h4 id="example-results-9"><a class="header" href="#example-results-9">Example Results</a></h4>
+<figure><img src="reviewed-content/workflows/../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<ul>
+<li>36631 results</li>
+</ul>
+<h4 id="deployment-difficulty-1"><a class="header" href="#deployment-difficulty-1">Deployment Difficulty</a></h4>
+<ul>
+<li>web hosted (easy difficulty)</li>
+<li>No API</li>
+</ul>
+<h4 id="pricing-1"><a class="header" href="#pricing-1">Pricing</a></h4>
+<ul>
+<li>varies by results size, not transparent</li>
+<li>large lists get into $2000-3000 range!!!</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="categories-1"><a class="header" href="#categories-1">Categories</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="public-breach-databases"><a class="header" href="#public-breach-databases">Public Breach Databases</a></h1>
+<h3 id="build-pick-custom-es-cluster"><a class="header" href="#build-pick-custom-es-cluster">Build Pick: Custom ES Cluster</a></h3>
+<ul>
+<li>go to <a href="https://breached.to/Announcement-Database-Index">https://breached.to/Announcement-Database-Index</a></li>
+<li>download as many as you can</li>
+<li>parse them and import to ElasticSearch</li>
+<li>highly recommend using Jupyter + Spark to do this (<a href="https://hub.docker.com/r/jupyter/all-spark-notebook/">https://hub.docker.com/r/jupyter/all-spark-notebook/</a>)</li>
+<li>elastic connector for spark</li>
+<li>even on modest hardware, can process/import over 2 million records per hour</li>
+<li>Total size will cap out around ~10billion records</li>
+<li>I am working to release this to the public</li>
+</ul>
+<h3 id="buy-pick-dehashed"><a class="header" href="#buy-pick-dehashed">Buy Pick: Dehashed</a></h3>
+<ul>
+<li>$15.50/month, or $179 annually</li>
+<li>separate pricing for API credits and web access
+<ul>
+<li>API pricing: $3 for 100 credits</li>
+</ul>
+</li>
+<li>Contains passwords</li>
+<li>certain sensitive data is not accessible to normal accounts (i.e. SSNs)</li>
+<li>offensive focus, but could be useful for defenders to determine what is exposed/change passwords</li>
+</ul>
+<h3 id="also-worth-it-have-i-been-pwned-hibp"><a class="header" href="#also-worth-it-have-i-been-pwned-hibp">Also Worth It: Have I Been Pwned (HIBP)</a></h3>
+<ul>
+<li>worth it, $3.50 per month subscription fee</li>
+<li>highly effective data breach notification service</li>
+<li>passwords accessible in certain circumstances</li>
+</ul>
+<h3 id="intelx"><a class="header" href="#intelx">IntelX</a></h3>
+<ul>
+<li>pricing unclear, but can use https://phonebook.cz for free to gather certain attributes (i.e. email addresses)</li>
+</ul>
+<p><a href="https://intelx.io/">https://intelx.io/</a></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="live-host-data"><a class="header" href="#live-host-data">Live Host Data</a></h1>
+<h3 id="buy-pick-shodan"><a class="header" href="#buy-pick-shodan">Buy Pick: Shodan</a></h3>
+<p><a href="https://www.shodan.io">https://www.shodan.io</a></p>
+<h4 id="details"><a class="header" href="#details">Details</a></h4>
+<ul>
+<li>$69 - $1099 per month depending on number of results per month needed</li>
+<li>1 million, 20 million, or unlimited results options</li>
+<li>137,390,036 results for port:443</li>
+</ul>
+<h4 id="usage-tips"><a class="header" href="#usage-tips">Usage Tips</a></h4>
+<ul>
+<li>use <code>net:127.0.0.1/8</code> for searching for results in a CIDR network</li>
+<li>supports JARM searches with <code>ssl.jarm</code> parameter</li>
+<li>can stack queries i.e. <code>ssl.jarm:&quot;2ad2ad16d2ad2ad22c42d42d000000dc2b105e4dda975fa70719c0cae5d0ce&quot; net:203.97.69.74/24</code></li>
+<li>supports organization filters i.e. <code>org:&quot;Verizon Business&quot;</code></li>
+<li>supports SSN cert CN filters i.e. <code>ssl.cert.subject.cn:&quot;*.google.com&quot;</code></li>
+</ul>
+<h3 id="binaryedge"><a class="header" href="#binaryedge">BinaryEdge</a></h3>
+<p><a href="https://www.binaryedge.io/">https://www.binaryedge.io/</a></p>
+<ul>
+<li>free account available, 250 requests per month</li>
+<li>also gathers torrent/DHT data</li>
+<li>$10-500 a month for higher query limits</li>
+<li>163,691,756 results for port:443</li>
+</ul>
+<h3 id="leakix"><a class="header" href="#leakix">LeakIX</a></h3>
+<p><a href="https://leakix.net/">https://leakix.net/</a></p>
+<ul>
+<li>gray hat scanning platform</li>
+<li>targeted at identifying vulnerable services, but can be used for other things</li>
+<li>has &quot;reporting&quot; capability where vulnerabilities can be reported to their owners</li>
+</ul>
+<h3 id="riskiq-community"><a class="header" href="#riskiq-community">RiskIQ Community</a></h3>
+<p><a href="https://community.riskiq.com">https://community.riskiq.com</a></p>
+<ul>
+<li>free account with business email has the following monthly quotas:</li>
+</ul>
+<pre><code>Web Searches: 350
+API Searches: 3,500
+Community (public) Projects: 1,000
+Team &amp; Analyst (private) Projects: 1
+Basic Monitors: 5,000
+Keyword Monitors: 10
+Monitor Frequency: Weekly
+Quota Duration
+Monthly
+Last Reset
+2022-10-01 00:00:00
+Next Reset
+2022-11-01 00:00:00
+</code></pre>
+<ul>
+<li>recently acquired by microsoft, integrated into Defender Threat Intelligence so future uncertain</li>
+</ul>
+<h3 id="greynoise"><a class="header" href="#greynoise">Greynoise</a></h3>
+<p><a href="https://viz.greynoise.io/">https://viz.greynoise.io/</a></p>
+<ul>
+<li>&quot;GreyNoise is a cybersecurity platform that collects and analyzes Internet-wide scan and attack traffic&quot;</li>
+<li>does not scan the internet, but collects data on what is scanning/attacking from the internet</li>
+</ul>
+<h3 id="censys"><a class="header" href="#censys">Censys</a></h3>
+<p><a href="https://search.censys.io/">https://search.censys.io/</a></p>
+<ul>
+<li>96,166,688 results for port:443</li>
+</ul>
+<h3 id="netlas"><a class="header" href="#netlas">Netlas</a></h3>
+<p><a href="https://netlas.io">https://netlas.io</a></p>
+<h3 id="onyphe"><a class="header" href="#onyphe">Onyphe</a></h3>
+<p><a href="https://www.onyphe.io/pricing/">https://www.onyphe.io/pricing/</a></p>
+<ul>
+<li>59 Euros for search access</li>
+<li>100-1000 Euro plans for business</li>
+<li>unknown data size</li>
+</ul>
+<h3 id="build-pick-na"><a class="header" href="#build-pick-na">Build Pick: N/A</a></h3>
+<ul>
+<li>most users should not try to scan the whole internet</li>
+<li>if you are the person that needs to build this, hopefully you know what you're doing </li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><hr />
+<h2>description: &gt;-
+Multipurpose tools gather multiple pieces of information in one go, as opposed
+to a single type of data</h2>
+<h1 id="multipurpose-reconnaissance-tools"><a class="header" href="#multipurpose-reconnaissance-tools">Multipurpose Reconnaissance Tools</a></h1>
+<h3 id="recon-ng"><a class="header" href="#recon-ng">Recon-ng</a></h3>
+<p>{% embed url=&quot;https://github.com/lanmaster53/recon-ng&quot; %}</p>
+<h3 id="maltego"><a class="header" href="#maltego">Maltego</a></h3>
+<p>{% embed url=&quot;https://www.maltego.com&quot; %}</p>
+<ul>
+<li>long standing general-purpose OSINT tool with graphical interface</li>
+<li>Free community edition available, with data gathering limitations</li>
+<li>$1000/year professional license</li>
+</ul>
+<h3 id="theharvester"><a class="header" href="#theharvester">TheHarvester</a></h3>
+<p>{% embed url=&quot;https://github.com/laramies/theHarvester&quot; %}</p>
+<ul>
+<li>performs open source intelligence (OSINT) gathering to help determine a domain's external threat landscape.</li>
+<li>gathers names, emails, IPs, subdomains, and URLs by using multiple public resources</li>
+<li>Language: python</li>
+</ul>
+<h3 id="spiderfoot"><a class="header" href="#spiderfoot">Spiderfoot</a></h3>
+<p>{% embed url=&quot;https://github.com/smicallef/spiderfoot&quot; %}</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="identity-data"><a class="header" href="#identity-data">Identity Data</a></h1>
+<h2 id="freeopen-source"><a class="header" href="#freeopen-source">Free/Open Source</a></h2>
+<h2 id="commercial"><a class="header" href="#commercial">Commercial</a></h2>
+<h3 id="pipl"><a class="header" href="#pipl">Pipl</a></h3>
+<p><a href="https://pipl.com">https://pipl.com</a></p>
+<ul>
+<li>built primarily for identity verification</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><hr />
+<h2 id="description-if-youre-trying-to-get-paid-for-osint-this-will-be-required"><a class="header" href="#description-if-youre-trying-to-get-paid-for-osint-this-will-be-required">description: If you're trying to get paid for OSINT, this will be required</a></h2>
+<h1 id="documentation"><a class="header" href="#documentation">Documentation</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><hr />
+<h2 id="description-screenshots-or-it-didnt-happen"><a class="header" href="#description-screenshots-or-it-didnt-happen">description: Screenshots or it didn't happen</a></h2>
+<h1 id="screen-capture"><a class="header" href="#screen-capture">Screen Capture</a></h1>
+<h3 id="hunchly"><a class="header" href="#hunchly">Hunchly</a></h3>
+<p>{% embed url=&quot;https://www.hunch.ly&quot; %}</p>
+<ul>
+<li>Browser extension specifically designed for OSINT investigations</li>
+<li>automatically captures webpages you visit</li>
+<li>free 30 day trial, $130/year </li>
+</ul>
+<h3 id="greenshot"><a class="header" href="#greenshot">Greenshot</a></h3>
+<p>{% embed url=&quot;https://getgreenshot.org/&quot; %}</p>
+<ul>
+<li>Free on Windows</li>
+<li>$2 on Mac</li>
+</ul>
+<h3 id="snagit"><a class="header" href="#snagit">Snagit</a></h3>
+<p>{% embed url=&quot;https://www.techsmith.com/screen-capture.html&quot; %}</p>
+<ul>
+<li>$63 license, perpetual but no updates/new features after 1 year</li>
+<li>Windows/Mac</li>
+<li>Video capture + webcam, scrolling captures, built-in shapes/censoring, much more</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="maps"><a class="header" href="#maps">Maps</a></h1>
+<h3 id="zeemaps-a-hrefgeneral-osint-infodocumentationmapshtmlbatchgeo-idbatchgeoa"><a class="header" href="#zeemaps-a-hrefgeneral-osint-infodocumentationmapshtmlbatchgeo-idbatchgeoa">ZeeMaps <a href="general-osint-info/documentation/maps.html#batchgeo" id="batchgeo"></a></a></h3>
+<p>{% embed url=&quot;https://www.zeemaps.com/&quot; %}</p>
+<h3 id="batchgeo-a-hrefgeneral-osint-infodocumentationmapshtmlbatchgeo-idbatchgeoa"><a class="header" href="#batchgeo-a-hrefgeneral-osint-infodocumentationmapshtmlbatchgeo-idbatchgeoa">BatchGeo <a href="general-osint-info/documentation/maps.html#batchgeo" id="batchgeo"></a></a></h3>
+<p>{% embed url=&quot;https://batchgeo.com/&quot; %}</p>
+<h3 id="creepy"><a class="header" href="#creepy">CreePy</a></h3>
+<p>{% embed url=&quot;https://github.com/ilektrojohn/creepy&quot; %}</p>
+<ul>
+<li>No active development, last update 2014</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="threat-intelligence"><a class="header" href="#threat-intelligence">Threat Intelligence</a></h1>
+<h2 id="freeopen-source-1"><a class="header" href="#freeopen-source-1">Free/Open Source</a></h2>
+<h3 id="threatminer"><a class="header" href="#threatminer">ThreatMiner</a></h3>
+<p>{% embed url=&quot;https://www.threatminer.org&quot; %}</p>
+<h3 id="alienvault-otx"><a class="header" href="#alienvault-otx">AlienVault OTX</a></h3>
+<p>{% embed url=&quot;https://otx.alienvault.com/&quot; %}</p>
+<h3 id="botscout"><a class="header" href="#botscout">BotScout</a></h3>
+<p>{% embed url=&quot;http://botscout.com/&quot; %}</p>
+<h3 id="bluelive-threat-exchange"><a class="header" href="#bluelive-threat-exchange">Bluelive Threat Exchange</a></h3>
+<p>{% embed url=&quot;https://community.blueliv.com/#!/discover&quot; %}</p>
+<h3 id="x-force-exchange"><a class="header" href="#x-force-exchange">X-Force Exchange</a></h3>
+<p>{% embed url=&quot;https://exchange.xforce.ibmcloud.com/&quot; %}</p>
+<h3 id="project-honeypot"><a class="header" href="#project-honeypot">Project Honeypot</a></h3>
+<p>{% embed url=&quot;https://www.projecthoneypot.org/index.php&quot; %}</p>
+<h3 id="honeydb"><a class="header" href="#honeydb">HoneyDB</a></h3>
+<p>{% embed url=&quot;https://honeydb.io/&quot; %}</p>
+<h3 id="misp"><a class="header" href="#misp">MISP</a></h3>
+<p>{% embed url=&quot;https://www.misp-project.org/&quot; %}</p>
+<h2 id="commercial-1"><a class="header" href="#commercial-1">Commercial</a></h2>
+<h3 id="virustotal-intelligence-a-hrefgeneral-osint-infothreat-intelligencehtmlvirustotal-intelligence-idvirustotal-intelligencea"><a class="header" href="#virustotal-intelligence-a-hrefgeneral-osint-infothreat-intelligencehtmlvirustotal-intelligence-idvirustotal-intelligencea">VirusTotal Intelligence <a href="general-osint-info/threat-intelligence.html#virustotal-intelligence" id="virustotal-intelligence"></a></a></h3>
+<p>{% embed url=&quot;https://www.virustotal.com/gui/intelligence-overview&quot; %}</p>
+<ul>
+<li>trial available for request</li>
+</ul>
+<h3 id="skopenow"><a class="header" href="#skopenow">SkopeNow</a></h3>
+<p>{% embed url=&quot;https://www.skopenow.com&quot; %}</p>
+<h3 id="sociallinks"><a class="header" href="#sociallinks">SocialLinks</a></h3>
+<p>{% embed url=&quot;https://sociallinks.io&quot; %}</p>
+<h3 id="nexusexplore"><a class="header" href="#nexusexplore">NexusExplore</a></h3>
+<p>{% embed url=&quot;https://www.nexusxplore.com&quot; %}</p>
+<h3 id="recorded-future"><a class="header" href="#recorded-future">Recorded Future</a></h3>
+<p>{% embed url=&quot;https://www.recordedfuture.com&quot; %}</p>
+<h3 id="dataminr"><a class="header" href="#dataminr">Dataminr</a></h3>
+<p>{% embed url=&quot;https://www.dataminr.com/&quot; %}</p>
+<ul>
+<li>pricing not publicly advertised - probably expensive</li>
+<li>claims &quot;AI&quot; driven real time intelligence</li>
+</ul>
+<h3 id="echosec"><a class="header" href="#echosec">Echosec</a></h3>
+<p>{% embed url=&quot;https://www.echosec.net/&quot; %}</p>
+<ul>
+<li>pricing not publicly advertised - probably expensive</li>
+<li>Hosted platform</li>
+<li>API - &quot;delivers direct access to a unique range of fringe social media networks, imageboards, and forums, and allows you to integrate and leverage this data for your own products, systems, and tooling&quot;</li>
+</ul>
+<h3 id="nexvision"><a class="header" href="#nexvision">Nexvision</a></h3>
+<p>{% embed url=&quot;https://www.nexvisionlab.com&quot; %}</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="code-repositories"><a class="header" href="#code-repositories">Code Repositories</a></h1>
+<h3 id="grepapp-a-hrefgeneral-osint-infocode-repositorieshtmlgrepapp-idgrepappa"><a class="header" href="#grepapp-a-hrefgeneral-osint-infocode-repositorieshtmlgrepapp-idgrepappa">Grep.app <a href="general-osint-info/code-repositories.html#grep.app" id="grep.app"></a></a></h3>
+<p>​<a href="https://grep.app">https://grep.app</a>​</p>
+<ul>
+<li>searches 500k+ git repositories</li>
+<li>filter by multiple attributes</li>
+</ul>
+<h4 id="example-results-a-hrefgeneral-osint-infocode-repositorieshtmlexample-results-1-idexample-results-1a"><a class="header" href="#example-results-a-hrefgeneral-osint-infocode-repositorieshtmlexample-results-1-idexample-results-1a">Example Results <a href="general-osint-info/code-repositories.html#example-results-1" id="example-results-1"></a></a></h4>
+<figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FqzcbXcwycyfyykXNDPdL%2Fuploads%2FYctCRImK7NNRmqqpXpMf%2Fimage.png?alt=media&#x26;token=b2a3b2c9-4084-4b47-9078-01cbfe0516fb" alt=""><figcaption></figcaption></figure>
+<h3 id="searchcode"><a class="header" href="#searchcode">Searchcode</a></h3>
+<p><a href="https://searchcode.com/">https://searchcode.com/</a></p>
+<ul>
+<li>searches GitHub, bitbucket, gitlabs, etc</li>
+<li>filter by language/repo only</li>
+</ul>
+<h4 id="example-results-10"><a class="header" href="#example-results-10">example results</a></h4>
+<figure><img src="general-osint-info/../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<h3 id="grepapp"><a class="header" href="#grepapp">Grep.app</a></h3>
+<p><a href="https://grep.app">https://grep.app</a></p>
+<ul>
+<li>searches 500k+ git repositories</li>
+<li>filtering capabilities</li>
+</ul>
+<h4 id="example-results-11"><a class="header" href="#example-results-11">Example Results</a></h4>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="malware-analysis"><a class="header" href="#malware-analysis">Malware Analysis</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="online-sandboxes"><a class="header" href="#online-sandboxes">Online Sandboxes</a></h1>
+<h3 id="sandboxpikkeree"><a class="header" href="#sandboxpikkeree">sandbox.pikker.ee</a></h3>
+<p><a href="https://sandbox.pikker.ee/dashboard/">https://sandbox.pikker.ee/dashboard/</a></p>
+<ul>
+<li>cuckoo cluster</li>
+<li>unknown affiliation</li>
+</ul>
+<h3 id="antiscanme"><a class="header" href="#antiscanme">Antiscan.me</a></h3>
+<p><a href="https://antiscan.me">https://antiscan.me</a></p>
+<h3 id="joesandbox"><a class="header" href="#joesandbox">JoeSandbox</a></h3>
+<p><a href="https://www.joesandbox.com/#windows">https://www.joesandbox.com/#windows</a></p>
+<h3 id="hybrid-analysis"><a class="header" href="#hybrid-analysis">Hybrid Analysis</a></h3>
+<p><a href="https://www.hybrid-analysis.com">https://www.hybrid-analysis.com</a></p>
+<ul>
+<li>provided by crowdstrike, shares data with Falcon</li>
+<li>cheaper than VT</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="android"><a class="header" href="#android">Android</a></h1>
+<h3 id="koodous"><a class="header" href="#koodous">Koodous</a></h3>
+<p><a href="https://koodous.com">https://koodous.com</a></p>
+<ul>
+<li>mobile application with AV capabilities</li>
+<li>analysis tools</li>
+<li>requires login/install</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="blockchain"><a class="header" href="#blockchain">Blockchain</a></h1>
+<h3 id="dune-analytics"><a class="header" href="#dune-analytics">Dune Analytics</a></h3>
+<p><a href="https://dune.com/browse/dashboards">https://dune.com/browse/dashboards</a></p>
+<ul>
+<li>User-created dashboards</li>
+<li>Extra useful for DeFi</li>
+</ul>
+<h3 id="etherscan"><a class="header" href="#etherscan">Etherscan</a></h3>
+<p><a href="https://etherscan.io">https://etherscan.io</a></p>
+<ul>
+<li>ethereum focused</li>
+<li>has wallet labels, transaction search, smart contracts</li>
+</ul>
+<h3 id="google-bigquery"><a class="header" href="#google-bigquery">Google BigQuery</a></h3>
+<p><a href="https://cloud.google.com/bigquery/">https://cloud.google.com/bigquery/</a></p>
+<ul>
+<li>Supports most major chains including Bitcoin, Ethereum, Zcash, doge, etc</li>
+<li>SQL syntax</li>
+<li>very useful for graphs</li>
+</ul>
+<h3 id="coingecko"><a class="header" href="#coingecko">CoinGecko</a></h3>
+<ul>
+<li>FREE API, with no keys</li>
+</ul>
+<p><a href="https://www.coingecko.com/en/api">https://www.coingecko.com/en/api</a></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="web-scraping"><a class="header" href="#web-scraping">Web Scraping</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="scraping"><a class="header" href="#scraping">Scraping</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><hr />
+<h2 id="description-paste-sites-are-internet-dumpsters-but-dumpster-diving-can-be-rewarding"><a class="header" href="#description-paste-sites-are-internet-dumpsters-but-dumpster-diving-can-be-rewarding">description: Paste sites are internet dumpsters, but dumpster diving can be rewarding</a></h2>
+<h1 id="paste-sites"><a class="header" href="#paste-sites">Paste Sites</a></h1>
+<h2 id="tools"><a class="header" href="#tools">Tools</a></h2>
+<h3 id="pastehunter"><a class="header" href="#pastehunter">Pastehunter</a></h3>
+<p>{% embed url=&quot;https://github.com/kevthehermit/PasteHunter&quot; %}</p>
+<h2 id="site-info"><a class="header" href="#site-info">Site Info</a></h2>
+<h3 id="pastebin-a-hrefhttpspastebincomhttpspastebincoma"><a class="header" href="#pastebin-a-hrefhttpspastebincomhttpspastebincoma">Pastebin (<a href="https://pastebin.com/">https://pastebin.com</a>)</a></h3>
+<ul>
+<li>8 byte alphanumeric ID</li>
+<li>Provides scraping API with feeds, but requires grandfathered pro account</li>
+</ul>
+<pre><code class="language-python"># example
+https://pastebin.com/Vqai8sBA
+</code></pre>
+<h3 id="a-hrefhttprentrycorentrycoa"><a class="header" href="#a-hrefhttprentrycorentrycoa"><a href="http://rentry.co/">rentry.co</a></a></h3>
+<ul>
+<li>5 byte alphanumeric ID</li>
+<li>no feed</li>
+</ul>
+<pre><code class="language-python"># example
+https://rentry.co/uvq4v
+</code></pre>
+<h3 id="zerobin-a-hrefhttpszerobinnethttpszerobinneta"><a class="header" href="#zerobin-a-hrefhttpszerobinnethttpszerobinneta">zerobin (<a href="https://zerobin.net/">https://zerobin.net</a>)</a></h3>
+<pre><code class="language-python"># example
+https://zerobin.net/?98703897a0cdceef#uTVX3KoxQbNrDJE+efmO9sexX3jT6Zt0ed4glZj295U=
+</code></pre>
+<h3 id="a-hrefhttpjustpasteitjustpasteita"><a class="header" href="#a-hrefhttpjustpasteitjustpasteita"><a href="http://justpaste.it/">justpaste.it</a></a></h3>
+<ul>
+<li>no recent feed</li>
+<li>no API</li>
+</ul>
+<pre><code class="language-markdown"># example paste
+https://justpaste.it/3spa1
+</code></pre>
+<h3 id="a-hrefhttptwitlongercomtwitlongercoma--a-hrefhttptlgdtlgda"><a class="header" href="#a-hrefhttptwitlongercomtwitlongercoma--a-hrefhttptlgdtlgda"><a href="http://twitlonger.com/">twitlonger.com</a> / <a href="http://tl.gd/">tl.gd</a></a></h3>
+<ul>
+<li>oauth from twitter only</li>
+<li>no recent feed</li>
+<li>api is for getting/updating posts only, auth required</li>
+<li>9 char id (alphanumeric with symbols)</li>
+</ul>
+<pre><code class="language-markdown"># example link
+https://www.twitlonger.com/show/n_1s1vre6
+http://tl.gd/n_1s1vre6
+</code></pre>
+<h3 id="a-hrefhttpjsfiddlenetjsfiddleneta"><a class="header" href="#a-hrefhttpjsfiddlenetjsfiddleneta"><a href="http://jsfiddle.net/">jsfiddle.net</a></a></h3>
+<ul>
+<li>8 char id (alphanumeric)</li>
+</ul>
+<pre><code class="language-markdown">#example
+https://jsfiddle.net/k092mfae/
+</code></pre>
+<h3 id="a-hrefhttpsgistgithubcomgistgithubcoma"><a class="header" href="#a-hrefhttpsgistgithubcomgistgithubcoma"><a href="https://gist.github.com/">gist.github.com</a></a></h3>
+<ul>
+<li>requires username</li>
+<li>32 char id (hex)</li>
+</ul>
+<pre><code class="language-markdown">https://gist.github.com/cham423/308cba152d57d10d91a1dbd614768024
+</code></pre>
+<h3 id="textbin-a-hrefhttpstextbinnethttpstextbinneta"><a class="header" href="#textbin-a-hrefhttpstextbinnethttpstextbinneta">Textbin (<a href="https://textbin.net/">https://textbin.net/</a>)</a></h3>
+<ul>
+<li>recent paste list, HTML only (would have to be scraped, extracted from homepage)
+<ul>
+<li>embedded in homepage, no API, no dedicated HTML page)</li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-python"># example
+https://textbin.net/1q09pepj0k
+</code></pre>
+<h3 id="ideone-a-hrefhttpideonecomideonecoma"><a class="header" href="#ideone-a-hrefhttpideonecomideonecoma">ideone (<a href="http://ideone.com/">ideone.com</a>)</a></h3>
+<ul>
+<li>IDE (sandbox code exec)</li>
+<li>has recent feed HTML (<a href="https://ideone.com/recent">https://ideone.com/recent</a>)</li>
+</ul>
+<pre><code class="language-python"># example
+https://ideone.com/Ok8iWL
+</code></pre>
+<h3 id="pastesite-a-hrefhttpspastesiteorglistshttpspastesiteorglistsa"><a class="header" href="#pastesite-a-hrefhttpspastesiteorglistshttpspastesiteorglistsa">pastesite (<a href="https://pastesite.org/lists">https://pastesite.org/lists</a>)</a></h3>
+<ul>
+<li>very low volume</li>
+<li>has recent feed HTML (<a href="https://pastesite.org/lists">https://pastesite.org/lists</a>)</li>
+</ul>
+<pre><code class="language-python"># example
+https://pastesite.org/view/19d5c69e
+</code></pre>
+<h3 id="controlc-a-hrefhttpscontrolccomhttpscontrolccoma"><a class="header" href="#controlc-a-hrefhttpscontrolccomhttpscontrolccoma">controlC (<a href="https://controlc.com">https://controlc.com</a>)</a></h3>
+<ul>
+<li>popular</li>
+<li>no recent feed</li>
+<li>8 byte hex ID</li>
+</ul>
+<pre><code class="language-python"># example
+&lt;https://controlc.com/ff1435ac&gt;
+</code></pre>
+<h3 id="ghostbin"><a class="header" href="#ghostbin">ghostbin</a></h3>
+<p><a href="https://ghostbin.co/">https://ghostbin.co</a></p>
+<ul>
+<li>defunct</li>
+</ul>
+<h3 id="sources"><a class="header" href="#sources">sources</a></h3>
+<p><a href="https://mediasonar.com/2020/09/09/pastebins-darkwebmarketplaces-osint/">https://mediasonar.com/2020/09/09/pastebins-darkwebmarketplaces-osint/</a></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="linkedin"><a class="header" href="#linkedin">LinkedIn</a></h1>
+<h3 id="yalis"><a class="header" href="#yalis">Yalis</a></h3>
+<p><a href="https://github.com/EatonChips/yalis">https://github.com/EatonChips/yalis</a></p>
+<ul>
+<li>simple, golang binary</li>
+<li>auto-generates emails based on email format flag</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="web-scanning-datasets"><a class="header" href="#web-scanning-datasets">Web Scanning Datasets</a></h1>
+<h3 id="publicwww"><a class="header" href="#publicwww">PublicWWW</a></h3>
+<p><a href="https://publicwww.com/">https://publicwww.com/</a></p>
+<ul>
+<li>search HTML source code on websites</li>
+</ul>
+<h3 id="urlscan"><a class="header" href="#urlscan">URLScan</a></h3>
+<p><a href="https://urlscan.io/">https://urlscan.io/</a></p>
+<ul>
+<li>can execute live scan of a potentially malicious URL</li>
+<li>can also search previous scan results</li>
+<li>results and scanned URLs are public #opsec</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="file-hosting-sites"><a class="header" href="#file-hosting-sites">File Hosting Sites</a></h1>
+<ul>
+<li>github.com</li>
+<li>jira.com</li>
+<li>dropbox.com</li>
+<li>sendspace.com</li>
+<li>mediafire.com</li>
+<li>onedrive.com</li>
+<li>teknik.io</li>
+<li>drive.google.com</li>
+<li>box.com</li>
+<li>evernote.com</li>
+<li><a href="http://gofile.io/">gofile.io</a></li>
+<li><a href="http://dood.so/">dood.so</a></li>
+<li><a href="http://anonfiles.com/">anonfiles.com</a></li>
+<li><a href="http://mediafire.com/">mediafire.com</a></li>
+<li>pcloud.com</li>
+<li>edocr.com</li>
+<li>4shared.com</li>
+<li>files.fm</li>
+<li>mega.nz</li>
+<li>jmp.sh</li>
+<li>pixeldrain.com</li>
+<li>opendrive.com</li>
+<li>orangedox.com</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="wifi"><a class="header" href="#wifi">WiFi</a></h1>
+<h3 id="wigle"><a class="header" href="#wigle">Wigle</a></h3>
+<p><a href="https://wigle.net/">https://wigle.net/ </a></p>
+<ul>
+<li>huge datastore of wardriving data</li>
+<li>can search for wireless networks in a specific area, or locate a physical location if a unique wireless SSID is known</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="training"><a class="header" href="#training">Training</a></h1>
+<p>todo, i need to make all of these into individual sub pages</p>
+<p><br />
+<a href="https://academy.tcm-sec.com/p/osint-fundamentals">https://academy.tcm-sec.com/p/osint-fundamentals</a><br />
+<a href="https://inteltechniques.com/training.html">https://inteltechniques.com/training.html</a><br />
+<a href="https://academy.osintcombine.com/courses">https://academy.osintcombine.com/courses</a></p>
+<p><a href="https://www.aware-online.com/en/live-webinar-osint-training-i-beginner/">https://www.aware-online.com/en/live-webinar-osint-training-i-beginner/</a> </p>
+<p><a href="https://www.intelligencewithsteve.com/osint">https://www.intelligencewithsteve.com/osint</a> </p>
+<p><a href="https://training.csilinux.com/">https://training.csilinux.com/</a> </p>
+<p><a href="https://www.udemy.com/course/osint-open-source-intelligence/">https://www.udemy.com/course/osint-open-source-intelligence/</a></p>
+<p> <a href="https://www.sans.org/cyber-security-courses/open-source-intelligence-gathering/">https://www.sans.org/cyber-security-courses/open-source-intelligence-gathering/</a> </p>
+<p><a href="https://www.sans.org/cyber-security-courses/advanced-open-source-intelligence-gathering-analysis/">https://www.sans.org/cyber-security-courses/advanced-open-source-intelligence-gathering-analysis/</a></p>
+<div style="break-before: page; page-break-before: always;"></div><hr />
+<h2 id="description-joe-offers-paid-osint-training-at-a-fair-price-see-links-and-reviews-below"><a class="header" href="#description-joe-offers-paid-osint-training-at-a-fair-price-see-links-and-reviews-below">description: Joe offers paid OSINT training at a fair price. See links and reviews below.</a></h2>
+<h1 id="joe-gray--the-osintion"><a class="header" href="#joe-gray--the-osintion">Joe Gray / The OSINTion</a></h1>
+<p>{% hint style=&quot;danger&quot; %}
+This is found content, and lacks a user review. Please submit a review if you taken any of this training.
+{% endhint %}</p>
+<p>{% embed url=&quot;https://www.theosintion.com/courses/&quot; %}</p>
+<h3 id="offerings"><a class="header" href="#offerings">Offerings</a></h3>
+<ul>
+<li>Paid Training (scheduled)</li>
+</ul>
+<h3 id="pricing-2"><a class="header" href="#pricing-2">Pricing</a></h3>
+<ul>
+<li>Fair ($100-500 USD)</li>
+</ul>
+<h3 id="reviews"><a class="header" href="#reviews">Reviews</a></h3>
+<ul>
+<li>submit yours! one sentence or paragraph is plenty.</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="how-to-contribute"><a class="header" href="#how-to-contribute">How to Contribute</a></h1>
+<h3 id="github"><a class="header" href="#github">GitHub</a></h3>
+<p>Editing on github is better if you're adding content to an existing page or making minor changes</p>
+<ul>
+<li>click &quot;edit on github&quot; in right panel, or go to <a href="https://github.com/cham423/okb">https://github.com/cham423/okb</a></li>
+<li>find the page you want to edit (search or manual)</li>
+<li>make changes (markdown)
+<ul>
+<li>github browser editor</li>
+<li>command line</li>
+</ul>
+</li>
+<li>make pull request</li>
+<li>submit!</li>
+</ul>
+<h3 id="gitbook"><a class="header" href="#gitbook">GitBook</a></h3>
+<p>GitBook editing will be required for bigger organization changes, adding new pages, or other &quot;curator&quot; tasks</p>
+<ul>
+<li>sign up for a gitbook account if you don't have one</li>
+<li>contact me (discord cham423#2790), provide your GitBook account's email address </li>
+<li>i will invite you to the space</li>
+<li>make your changes in an edit</li>
+<li>submit edit for review, along with any pertinent information</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="rules"><a class="header" href="#rules">Rules</a></h1>
+<ul>
+<li>todo</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="contributors"><a class="header" href="#contributors">Contributors</a></h1>
+<h4 id="corey-ham-cham423"><a class="header" href="#corey-ham-cham423">Corey Ham (@cham423)</a></h4>
+<ul>
+<li>red teamer</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                        
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                            </nav>
+
+        </div>
+
+        
+        
+        
+                <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+        
+                <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+                        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+                
+    </body>
+</html>
