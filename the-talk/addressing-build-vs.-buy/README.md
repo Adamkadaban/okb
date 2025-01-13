@@ -1,3 +1,0 @@
-# Addressing Build vs. Buy
-
-It was in the title of the talk...
