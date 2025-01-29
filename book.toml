@@ -4,3 +4,6 @@ language = "en"
 multilingual = false
 src = "src"
 title = "okb"
+
+[output.html]
+cname = "okb.hackback.zip"
